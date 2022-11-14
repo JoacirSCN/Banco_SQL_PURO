@@ -4,6 +4,7 @@ const AppError = require("./utils/AppError");
 /* --------------------------- */
 
 /* SRC/DATABASE/SQLITE/MIGRATIONS */
+// Executa o index de migrations
 const migrationsRun = require('./database/sqlite/migrations');
 migrationsRun();
 
