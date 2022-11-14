@@ -1,5 +1,5 @@
 const createUsers = `CREATE TABLE IF NOT EXISTS users (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  id INTEGER PRIMARY KE AUTOINCREMENT,
   name VARCHAR,
   email VARCHAR,
   password VARCHAR,
@@ -8,4 +8,4 @@ const createUsers = `CREATE TABLE IF NOT EXISTS users (
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )`;
 
-module.exports = createUsers;
+module.exports = { createUsers };
