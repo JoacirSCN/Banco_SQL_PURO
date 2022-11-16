@@ -1,7 +1,6 @@
 const { hash, compare } = require('bcryptjs'); // Recebe a função de criptografia de senha
 const AppError = require('../utils/AppError');
-const sqliteConnection = require('../database/sqlite'); // É a conecção com o banco de dados
-const { use } = require('express/lib/router');
+const { sqliteConnection } = require('../database/sqlite'); // É a conecção com o banco de dados
 
 class UsersController {
   /** Pode ter no MAXIMO 5 METÓDOS
