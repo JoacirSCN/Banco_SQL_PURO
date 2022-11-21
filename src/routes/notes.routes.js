@@ -6,6 +6,12 @@ const notesRoutes = Router();
 
 // é aqui que a rota do usuário está, userController.cria usuario
 notesRoutes.post('/:user_id', notesController.create);
+notesRoutes.get('/:id', notesController.show);
+notesRoutes.delete('/:id', notesController.delete);
+notesRoutes.get('/', notesController.index);
+
+
+
 
 
 /* usersRoutes.post('/', (request, response) => {

@@ -7,6 +7,9 @@ async function sqliteConnection() {
     filename: path.resolve(__dirname, '..', 'database.db'),
     driver: sqlite3.Database
   })
+  
+  
+  await database.run('PRAGMA foreign_keys = ON');
 
   return database;
 }
